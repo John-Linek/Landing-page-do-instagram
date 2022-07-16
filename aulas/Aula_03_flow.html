@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03: Flexbox - Flow</title>
+    <style>
+        .conteiner{
+            display: flex;
+            border: 2px solid black;
+            max-width: 215px;
+            max-height: 230px;
+            margin: 0 0 50px;
+        }
+        .item{
+            margin: 3px;
+            min-width: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+        .red{
+            background-color: red;
+        }
+        .orange{
+            background-color: orangered;
+        }
+        .purple{
+            background-color: purple;
+        }
+        .green{
+            background-color: green;
+        }
+        .flow-column-nowrap{
+            flex-flow: column nowrap;
+        }
+        .flow-column-wrap{
+            flex-flow: column wrap;
+        }
+        .flow-row-wrap{
+            flex-flow: row nowrap;
+        }
+        .flow-row-nowrap{
+            flex-flow: row wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flow: column-nowrap</h1>
+    <div class="conteiner flow-column-nowrap">
+        <div class="item red">Item 01</div>
+        <div class="item orange">Item 02</div>
+        <div class="item purple">Item 03</div>
+        <div class="item green">Item 04</div>
+    </div>
+    <h1>Flow: column-wrap</h1>
+    <div class="conteiner flow-column-wrap">
+        <div class="item red">Item 01</div>
+        <div class="item orange">Item 02</div>
+        <div class="item purple">Item 03</div>
+        <div class="item green">Item 04</div>
+    </div>
+    <h1>Flow: flow-row-nowrap</h1>
+    <div class="conteiner flow-row-nowrap">
+        <div class="item red">Item 01</div>
+        <div class="item orange">Item 02</div>
+        <div class="item purple">Item 03</div>
+        <div class="item green">Item 04</div>
+    </div>
+    <h1>Flow: flow-row-wrap</h1>
+    <div class="conteiner flow-row-wrap">
+        <div class="item red">Item 01</div>
+        <div class="item orange">Item 02</div>
+        <div class="item purple">Item 03</div>
+        <div class="item green">Item 04</div>
+    </div>
+</body>
+</html>

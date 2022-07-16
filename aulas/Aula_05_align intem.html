@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05: Flexbox - Justify content</title>
+    <style>
+        .conteiner{
+            display: flex;
+            border: 2px solid black;
+            max-width:350px;
+        }
+        .item{
+            background-color:violet;
+            margin: 5px;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            flex: 1
+        }
+        .align-center{
+            align-items: center;
+        }
+        .align-stretch{
+            align-items:stretch;
+        }
+        .align-start{
+            align-items:flex-start;
+        }
+        .align-end{
+            align-items:flex-end;
+        }
+        .align-baseline{
+            align-items:baseline;
+        }
+        .central{
+            height: 400px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align-Items: Center</h1>
+    <div class="conteiner align-center">
+        <div class="item">Item 01</div>
+        <div class="item">Toda honra e glória seja dada a Deus!</div>
+        <div class="item">Item 03</div>
+    </div>
+    <h1>Align-Items: Strech</h1>
+    <div class="conteiner align-stretch">
+        <div class="item">Item 01</div>
+        <div class="item">Toda honra e glória seja dada a Deus!</div>
+        <div class="item">Item 03</div>
+    </div>
+    <h1>Align-Items: flex-start</h1>
+    <div class="conteiner align-start">
+        <div class="item">Item 01</div>
+        <div class="item">Toda honra e glória seja dada a Deus!</div>
+        <div class="item">Item 03</div>
+    </div>
+    <h1>Align-Items: flex-end</h1>
+    <div class="conteiner align-end">
+        <div class="item">Item 01</div>
+        <div class="item">Toda honra e glória seja dada a Deus!</div>
+        <div class="item">Item 03</div>
+    </div>
+    <h1>Align-Items: baseline</h1>
+    <div class="conteiner align-baseline">
+        <div class="item">Item 01</div>
+        <div class="item">Toda honra e glória seja dada a Deus!</div>
+        <div class="item">Item 03</div>
+    </div>
+    <h1>Align-Items: baseline</h1>
+    <div class="conteiner align-baseline">
+        <div class="item">Item 01</div>
+        <div class="item">Toda honra e glória seja dada a Deus!</div>
+        <div class="item">Item 03</div>
+    </div>
+    <h1>Align-Items: Central</h1>
+    <div class="conteiner central align-center ">
+        <div class="item">Toda honra e glória seja dada a Deus!</div>
+    </div>
+    
+</body>
+</html>
